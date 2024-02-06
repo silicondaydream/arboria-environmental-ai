@@ -49,7 +49,7 @@ export async function POST(req: Request) {
           ...messages,
           {
             content: completion,
-            role: 'assistant'
+            role: 'environmental ai assistant, green-minded copilot and eco-conscious companion.'
           }
         ]
       }
