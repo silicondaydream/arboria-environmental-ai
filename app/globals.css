@@ -4,73 +4,76 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    /* Base Theme - Forest Green Palette */
+    --background: 120, 25%, 95%; /* Light pastel green for background */
+    --foreground: 120, 30%, 20%; /* Darker green for text */
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 120, 20%, 90%; /* Muted pastel green for less prominent elements */
+    --muted-foreground: 120, 25%, 30%; /* Slightly darker green for muted text */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover: 120, 25%, 95%; /* Light pastel green for popover backgrounds */
+    --popover-foreground: 120, 30%, 20%; /* Dark green for popover text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 120, 25%, 95%; /* Light pastel green for card backgrounds */
+    --card-foreground: 120, 30%, 20%; /* Dark green for card text */
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --border: 120, 20%, 85%; /* Soft green for borders */
+    --input: 120, 20%, 85%; /* Soft green for input fields */
 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 120, 40%, 35%; /* Vibrant forest green for primary elements */
+    --primary-foreground: 120, 30%, 95%; /* Very light green for text on primary elements */
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 120, 20%, 90%; /* Light pastel green for secondary elements */
+    --secondary-foreground: 120, 40%, 35%; /* Dark green for text on secondary elements */
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: ;
+    --accent: 120, 35%, 50%; /* Accent green */
+    --accent-foreground: 120, 30%, 95%; /* Very light green for text on accent elements */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0, 50%, 40%; /* Keeping a shade of red for destructive actions */
+    --destructive-foreground: 0, 0%, 100%; /* White for text on destructive elements */
 
-    --ring: 240 5% 64.9%;
+    --ring: 120, 25%, 50%; /* Green for focus rings */
 
-    --radius: 0.5rem;
+    --radius: 0.5rem; /* Border radius */
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Dark Theme - Forest Green Palette */
+    --background: 120, 30%, 15%; /* Dark forest green for background */
+    --foreground: 120, 25%, 95%; /* Light pastel green for text */
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 120, 25%, 20%; /* Dark muted green for less prominent elements */
+    --muted-foreground: 120, 20%, 70%; /* Lighter green for muted text */
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 120, 30%, 15%; /* Dark forest green for popover backgrounds */
+    --popover-foreground: 120, 25%, 95%; /* Light pastel green for popover text */
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 120, 30%, 15%; /* Dark forest green for card backgrounds */
+    --card-foreground: 120, 25%, 95%; /* Light pastel green for card text */
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --border: 120, 25%, 20%; /* Dark green for borders */
+    --input: 120, 25%, 20%; /* Dark green for input fields */
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: 120, 50%, 40%; /* Bright forest green for primary elements */
+    --primary-foreground: 120, 25%, 95%; /* Light pastel green for text on primary elements */
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 120, 25%, 20%; /* Dark muted green for secondary elements */
+    --secondary-foreground: 120, 50%, 40%; /* Bright green for text on secondary elements */
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: ;
+    --accent: 120, 35%, 30%; /* Darker green for accent elements */
+    --accent-foreground: 120, 25%, 95%; /* Light pastel green for text on accent elements */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 85.7% 97.3%;
+    --destructive: 0, 60%, 50%; /* Adjusted red for better visibility in dark mode */
+    --destructive-foreground: 0, 0%, 100%; /* White for text on destructive elements */
 
-    --ring: 240 3.7% 15.9%;
+    --ring: 120, 25%, 30%; /* Dark green for focus rings */
   }
 }
 
 @layer base {
   * {
     @apply border-border;
+
   }
   body {
     @apply bg-background text-foreground;
