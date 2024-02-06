@@ -3,14 +3,15 @@
 ## Running locally
 
 You will need to add the following environment variables to a `.env` file:
-OPENAI_API_KEY - for model available at openAI website
-AUTH_SECRET - for nextAuth can be random
-AUTH_GITHUB_ID - for nextAuth github provider
-AUTH_GITHUB_SECRET - for nextAuth github provider
-KV_URL - for Vercel db
-KV_REST_API_URL - for db
-KV_REST_API_TOKEN - for db
-KV_REST_API_READ_ONLY_TOKEN - for db
+
+- OPENAI_API_KEY - for model available at openAI website
+- AUTH_SECRET - for nextAuth can be random
+- AUTH_GITHUB_ID - for nextAuth github provider
+- AUTH_GITHUB_SECRET - for nextAuth github provider
+- KV_URL - for Vercel db
+- KV_REST_API_URL - for db
+- KV_REST_API_TOKEN - for db
+- KV_REST_API_READ_ONLY_TOKEN - for db
 
 > Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various OpenAI and authentication provider accounts.
 
