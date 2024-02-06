@@ -43,3 +43,4 @@ This app utilizes OpenAI's API to call the `gpt-3.5-turbo` model.
 - Further fine tuning of the model
 - Adding Google provider for easier login
 - Update chat sidebar dark mode color values
+- update permissions for chat history 
